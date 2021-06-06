@@ -26,7 +26,7 @@ public class ChromeBaseTest {
     Map<String, Object> vars = new HashMap<String, Object>();
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver.manage().window().maximize();
         driver.get("https://www.seleniumeasy.com/test/");
@@ -37,13 +37,13 @@ public class ChromeBaseTest {
     }
 
     @AfterEach
-    void closingTestingProcess(){
+    void closingTestingProcess() {
         driver.close();
     }
 
     @Test
     @Order(1)
-    void navigationTest_ClickOnSimpleFormDemo(){
+    void navigationTest_ClickOnSimpleFormDemo() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Simple Form Demo")).click();
     }
@@ -144,6 +144,7 @@ public class ChromeBaseTest {
         String value = driver.findElement(By.id("check1")).getAttribute("value");
         assertEquals("Uncheck All", value);
     }
+
     @Test
     @Order(10)
     public void selectList() {
@@ -195,8 +196,8 @@ public class ChromeBaseTest {
         driver.findElement(By.linkText("Radio Buttons Demo")).click();
         vars.put("counter", js.executeScript("return 1"));
         String varGender;
-        for(int j=1; j <=2; j++){
-            if(j == 1){
+        for (int j = 1; j <= 2; j++) {
+            if (j == 1) {
                 varGender = "Male";
             } else {
                 varGender = "Female";
