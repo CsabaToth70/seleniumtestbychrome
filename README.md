@@ -5,6 +5,7 @@
 This project task was given as the first step to learn and apply Selenium-based automated test commands. 
 I applied commands of Selenium IDE at the first step. 
 After all written test ran down properly in Selenium IDE, I prepared this WebDrive-based solution test suit
+<br><br>
 
 ![Selenium Easy](seleniumeasy.png)
 <br>
