@@ -42,14 +42,12 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(1)
     void navigationTest_ClickOnSimpleFormDemo() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Simple Form Demo")).click();
     }
 
     @Test
-    @Order(2)
     void singleFieldButton() {
         driver.findElement(By.cssSelector(".tree-branch:nth-child(1) > .glyphicon-chevron-right")).click();
         driver.findElement(By.linkText("Simple Form Demo")).click();
@@ -59,7 +57,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(3)
     void twoFieldsOutputTest_checkWithPositiveSmallNumbers() {
         driver.findElement(By.linkText("Input Forms")).click();
         driver.findElement(By.linkText("Simple Form Demo")).click();
@@ -72,7 +69,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(4)
     void twoFieldsOutputTest_checkWithPositiveLargeNumbers() {
         driver.findElement(By.linkText("Input Forms")).click();
         driver.findElement(By.linkText("Simple Form Demo")).click();
@@ -85,7 +81,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(5)
     void singleCheckboxTest() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Checkbox Demo")).click();
@@ -94,7 +89,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(6)
     void multipleCheckboxTest_withFilledInThreeBoxes() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Checkbox Demo")).click();
@@ -106,7 +100,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(7)
     void multipleCheckboxTest_withFilledInAllBoxes() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Checkbox Demo")).click();
@@ -119,7 +112,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(8)
     void multipleCheckboxTest_togetherWithFilledInSimpleCheckbox_withFilledInThreeBoxes() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Checkbox Demo")).click();
@@ -132,7 +124,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(9)
     void multipleCheckboxTest_togetherWithFilledInSimpleCheckbox_withFilledInAllBoxes() {
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
         driver.findElement(By.linkText("Checkbox Demo")).click();
@@ -146,7 +137,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(10)
     public void selectList() {
         driver.findElement(By.cssSelector(".tree-branch:nth-child(1) > .glyphicon-chevron-right")).click();
         driver.findElement(By.linkText("Select Dropdown List")).click();
@@ -189,7 +179,6 @@ public class ChromeBaseTest {
     }
 
     @Test
-    @Order(11)
     public void radioButtons() {
         driver.get("https://www.seleniumeasy.com/test/");
         driver.findElement(By.cssSelector("ul:nth-child(3) > .tree-branch:nth-child(1) > a")).click();
